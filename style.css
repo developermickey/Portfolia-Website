@@ -29,6 +29,7 @@ header {
     margin-right: auto;
     border-radius: 50px;
     text-align: center;
+    z-index: 999999999999;
 }
 header ul {
     display: flex;
@@ -52,8 +53,6 @@ header ul li a:hover {
     background: #fe853a;
     border-radius: 50px;
 }
-
-
 #page1 {
     width: 100%;
     min-height: 100vh;
@@ -61,6 +60,12 @@ header ul li a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 100px;
+}
+#page1 .helloImg {
+    position: relative;
+    left: 70px;
+    top: 15px;
 }
 #page1 .hello {
     border: 1px solid #000;
@@ -74,13 +79,113 @@ header ul li a:hover {
     font-weight: 500;
     text-align: center;
     line-height: 7rem;
+    z-index: -1;
 }
 #page1 h1 span {
     color: #fe853a;
+}
+#page1 .productImg {
+    position: relative;
+    right: 450px;
+    top: -50px;
 }
 #page1 .imgHero {
     width: 100%;
     max-width: 700px;
     position: absolute;
-    top: 435px;
+    top: 350px;
+    left: 28%;
+    z-index: -1;
+}
+
+#page1 .btn-group {
+    position: absolute;
+    z-index: 99999;
+    top: 750px;
+  background: #c1c1c100;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  box-shadow: 0px 0px 0px 1px #fff;
+  backdrop-filter: blur(2px);
+}
+#page1 .btn-group .portfolio {
+    padding: 14px 20px;
+    border-radius: 50px;
+    background: #fe853a;
+    color: #fff;
+    font-size: 22px;
+    border: 1px solid #fff;
+    font-weight: 700;
+
+}
+#page1 .btn-group .hire {
+    padding: 14px 20px;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+
+}
+
+
+
+
+#page1 .text {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+#page1 .text .left {
+    width: 50%;
+}
+#page1 .text .left i {
+    font-size: 44px;
+}
+#page1 .text .left p {
+    font-size: 22px;
+    font-weight: 600;
+}
+#page1 .text .right {
+    width: 50%;
+    text-align: right;
+}
+
+#page1 .text .right i {
+    font-size: 28px;
+    color: #fe853a;
+}
+#page1 .text .right h2 {
+    font-size: 44px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif ;
+}
+#page1 .text .right p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Page 2 */
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 99999999999;
+}
+
+#page3 {
+    width: 100%;
+    height: 100vh;
 }
